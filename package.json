@@ -2,19 +2,19 @@
   "name": "silver-website-template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "start": "parcel index.html"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pomierski/Website-template/"
+    "url": "git+https://github.com/Pomierski/website-template/"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "@Pomierski",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Pomierski/Website-template/issues"
+    "url": "https://github.com/Pomierski/website-template/issues"
   },
   "browserslist": [
     "last 3 and_chr versions",
@@ -23,7 +23,7 @@
     "last 3 ios_saf versions",
     "last 3 safari versions"
   ],
-  "homepage": "https://pomierski.github.io/Webiste-template",
+  "homepage": "https://pomierski.github.io/webiste-template",
   "devDependencies": {
     "cssnano": "^4.1.10",
     "parcel-bundler": "^1.12.5",
