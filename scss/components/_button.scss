@@ -1,0 +1,25 @@
+@import "../variables/_colors.scss";
+
+.button {
+  background: $mainColor;
+  border: 0;
+  border-radius: 20px;
+  color: #fff;
+  padding: 12px 36px;
+  font-size: 1rem;
+
+  &--outline {
+    background: none;
+    border: 2px solid $mainColor;
+    color: $mainColor;
+  }
+
+  &--icon {
+    display: block;
+    background: none;
+    border: 0;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+  }
+}

@@ -1,0 +1,64 @@
+@import "../variables/_colors.scss";
+@import "../variables/_typography.scss";
+@import "../variables/_breakpoints.scss";
+
+.card {
+  width: 100%;
+  height: 180px;
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  box-shadow: 0 15px 24px -10px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+
+  @media (min-width: $screenSizeMd) {
+    width: 280px;
+    height: 180px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 0.5rem;
+  }
+
+  @media (min-width: $screenSizeLg) {
+    margin: 0;
+  }
+
+  &--big {
+    @media (min-width: $screenSizeMd) {
+      width: 330px;
+      height: 230px;
+    }
+  }
+
+  &__content {
+    color: $darkText;
+  }
+
+  &__author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $darkText;
+    align-self: flex-start;
+
+    @media (min-width: $screenSizeMd) {
+      align-self: flex-end;
+    }
+
+    &__image {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 0.5rem;
+
+      & > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+      }
+    }
+  }
+}

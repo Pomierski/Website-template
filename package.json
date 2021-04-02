@@ -1,0 +1,36 @@
+{
+  "name": "silver-website-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pomierski/Website-template/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pomierski/Website-template/issues"
+  },
+  "browserslist": [
+    "last 3 and_chr versions",
+    "last 3 chrome versions",
+    "last 3 opera versions",
+    "last 3 ios_saf versions",
+    "last 3 safari versions"
+  ],
+  "homepage": "https://pomierski.github.io/Webiste-template",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "parcel-bundler": "^1.12.5",
+    "shx": "^0.3.2"
+  },
+  "dependencies": {
+    "@lottiefiles/lottie-player": "^0.5.1",
+    "aos": "^3.0.0-beta.6"
+  }
+}

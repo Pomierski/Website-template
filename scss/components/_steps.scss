@@ -1,0 +1,68 @@
+@import "../variables/_colors.scss";
+@import "../variables/_typography.scss";
+@import "../variables/_breakpoints.scss";
+
+.steps {
+  padding: 2rem 0;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+
+  @media (min-width: $screenSizeSm) {
+    flex-direction: row;
+  }
+
+  &__step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+
+    &__number {
+      border-radius: 100%;
+      border: 2px solid #fff;
+      padding: 1.5rem;
+      font-size: $textSizeSm;
+      color: #fff;
+      width: 1rem;
+      height: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__title {
+      grid-row: 2;
+      margin-top: 0.5rem;
+      color: #fff;
+      @media (min-width: $screenSizeMd) {
+        font-size: $textSizeSm;
+      }
+    }
+  }
+
+  &__divider-wrapper {
+    flex: 1;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+
+    @media (min-width: $screenSizeSm) {
+      margin: 0;
+    }
+
+    &__divider {
+      height: 4rem;
+      background-color: #fff;
+      width: 1px;
+
+      @media (min-width: $screenSizeSm) {
+        height: 1px;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+@import "../variables/_colors.scss";
+@import "../variables/_typography.scss";
+@import "../variables/_breakpoints.scss";
+
+.flex-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  @media (min-width: $screenSizeMd) {
+    flex-direction: row;
+  }
+}
+
+.flex-wrapper-2col {
+  display: flex;
+
+  & > * {
+    flex: 1;
+  }
+}
+
+.main-color {
+  color: $mainColor;
+}
+
+.main-color-link {
+  color: $mainColor;
+  text-decoration: none;
+}
+
+.margin-vertical {
+  margin: 0 3rem;
+}
+
+.margin-top {
+  @media (min-width: $screenSizeLg) {
+    margin-top: 5rem;
+  }
+}
+
+.mobile-order {
+  @media (max-width: $screenSizeMd) {
+    order: -1;
+  }
+}
+
+.hide-on-mobile {
+  @media (max-width: $screenSizeMd) {
+    display: none;
+  }
+}
+
+.lottie-player {
+  width: auto;
+  height: 100%;
+
+  @media (max-width: $screenSizeMd) {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $screenSizeLg) {
+    transform: none !important;
+  }
+
+  @media (min-width: $screenSizeLg) {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition-property: transform, opacity;
+  transition: transform 0.5s, opacity 0.5s;
+
+  &.aos-animate {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

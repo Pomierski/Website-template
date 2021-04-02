@@ -1,0 +1,70 @@
+@import "../variables/_colors.scss";
+@import "../variables/_typography.scss";
+@import "../variables/_breakpoints.scss";
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+
+  @media (min-width: $screenSizeSm) and (max-width: $screenSizeMd) {
+    padding-top: 2rem;
+  }
+
+  @media (min-width: $screenSizeMd) {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  &__brand {
+    color: $mainColor;
+    font-weight: $fontBold;
+    font-size: $textSizeMb;
+
+    @media (min-width: $screenSizeMd) {
+      font-size: $textSizeLg;
+    }
+  }
+
+  &__mobile-menu {
+    margin-left: auto;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    width: 2rem;
+    height: 2rem;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (min-width: $screenSizeMd) {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: none;
+    list-style-type: none;
+    margin: auto;
+    @media (min-width: $screenSizeMd) {
+      display: flex;
+    }
+
+    &__item {
+      margin: 0 1.5rem;
+      color: $darkText;
+
+      & > a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import "../variables/_colors.scss";
+@import "../variables/_typography.scss";
+@import "../variables/_breakpoints.scss";
+
+.about-us {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  & > * {
+    @media (min-width: $screenSizeMd) {
+      flex: 1;
+    }
+  }
+
+  &__text-wrapper {
+    @media (min-width: $screenSizeMd) {
+      padding: 0 2.5rem;
+    }
+
+    &__title {
+      font-weight: normal;
+      font-size: $textSizeMd;
+      color: $mainColor;
+      margin-bottom: 1rem;
+    }
+
+    &__desc {
+      text-align: justify;
+    }
+  }
+}

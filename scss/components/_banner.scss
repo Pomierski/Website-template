@@ -1,0 +1,18 @@
+@import "../variables/_colors.scss";
+@import "../variables/_typography.scss";
+
+.banner {
+  background: rgb(140, 117, 235);
+  background: linear-gradient(
+    180deg,
+    rgba(140, 117, 235, 1) 0%,
+    rgba(115, 107, 223, 1) 100%
+  );
+  padding: 2rem 0;
+
+  &__header {
+    font-size: $textSizeMd;
+    color: #fff;
+    text-align: center;
+  }
+}
