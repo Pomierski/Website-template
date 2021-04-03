@@ -50,7 +50,7 @@
 
     @media (min-width: $screenSizeMd) {
       font-size: $textSizeXl;
-      line-height: 45px;
+      line-height: $textSizeXl;
     }
   }
 
