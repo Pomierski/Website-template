@@ -221,7 +221,7 @@
   }
 }
 
-.hero__header {
+.hero__heading {
   font-size: 2rem;
   color: #7c4dff;
   font-weight: 700;
@@ -229,7 +229,7 @@
 }
 
 @media (min-width: 835px) {
-  .hero__header {
+  .hero__heading {
     font-size: 3rem;
     line-height: 45px;
   }
@@ -535,7 +535,7 @@
   }
 }
 
-.section__header {
+.section__heading {
   font-size: 2rem;
   color: #7c4dff;
   text-align: center;
@@ -543,7 +543,7 @@
 }
 
 @media (min-width: 992px) {
-  .section__header {
+  .section__heading {
     font-size: 2.5rem;
   }
 }
