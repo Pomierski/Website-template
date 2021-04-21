@@ -1,4 +1,5 @@
 import AOS from "aos";
+import "@lottiefiles/lottie-player";
 
 AOS.init({
   disable: "mobile",
