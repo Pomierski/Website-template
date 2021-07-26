@@ -2,6 +2,8 @@
 
 Simple website template written without any framework. Bundled with Parcel.
 
+# [Live](https://pomierski.github.io/website-template/)
+
 ## How to run
 - `npm install`
 - `npm start` or `parcel index.html`
