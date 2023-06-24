@@ -1,23 +1,13 @@
-import AOS from "aos";
-import "@lottiefiles/lottie-player";
+import '@lottiefiles/lottie-player'
+import AOS from 'aos'
+import { handleMobileMenu } from './handleMobileMenu'
+import { loadLottie } from './loadLottie'
 
 AOS.init({
-  disable: "mobile",
+  disable: 'mobile',
   once: true,
   duration: 500,
-});
+})
 
-const menuButtons = document.querySelectorAll([
-  "[mobile-menu]",
-  ".mobile-menu__list__item",
-]);
-const mobileMenu = document.querySelector(".mobile-menu");
-let showMenu = false;
-
-const toggleMenu = () => {
-  showMenu = !showMenu;
-  if (showMenu) mobileMenu.style.transform = "translateX(-100%)";
-  else mobileMenu.style.transform = "translateX(0)";
-};
-
-menuButtons.forEach((el) => el.addEventListener("click", toggleMenu));
+handleMobileMenu()
+loadLottie()

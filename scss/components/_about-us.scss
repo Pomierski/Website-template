@@ -8,6 +8,10 @@
   flex-direction: row;
   flex-wrap: wrap;
 
+  @media (max-width: $screenSizeLg) {
+    margin-bottom: 2.5rem;
+  }
+
   & > * {
     @media (min-width: $screenSizeMd) {
       flex: 1;
@@ -15,9 +19,7 @@
   }
 
   &__text-wrapper {
-    @media (min-width: $screenSizeMd) {
-      padding: 0 2.5rem;
-    }
+    padding: 0 2.5rem;
 
     &__title {
       font-weight: normal;

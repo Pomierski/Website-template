@@ -25,13 +25,13 @@
   ],
   "homepage": "https://pomierski.github.io/webiste-template",
   "devDependencies": {
-    "cssnano": "^4.1.10",
-    "parcel-bundler": "^1.12.5",
-    "sass": "^1.32.11",
-    "shx": "^0.3.2"
+    "cssnano": "4.1.10",
+    "parcel-bundler": "1.12.5",
+    "sass": "1.32.11",
+    "shx": "0.3.2"
   },
   "dependencies": {
-    "@lottiefiles/lottie-player": "^0.5.1",
-    "aos": "^3.0.0-beta.6"
+    "@lottiefiles/lottie-player": "2.0.2",
+    "aos": "3.0.0-beta.6"
   }
 }
